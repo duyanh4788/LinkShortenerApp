@@ -1,0 +1,129 @@
+.demoShorttent {
+  width: 100%;
+  height: 100vh;
+  background: rgba(22, 22, 22, 0.616);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wrapShort {
+  width: 600px;
+  max-width: 600px;
+  padding: 50px;
+  background-color: rgba(245, 102, 145, 0.212);
+  border-radius: 5px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(211, 204, 204, 0.616);
+}
+
+h6 {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
+.inputShort {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgba(22, 22, 22, 0.616);
+}
+.inputShort::placeholder {
+  color: #212321a9;
+  opacity: 0.5;
+  text-align: right;
+}
+.divBtn {
+  text-align: center;
+  margin: 10px 0;
+}
+.btnShort {
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 10px 15px;
+  outline: none !important;
+  border: none;
+}
+
+.divUrl {
+  width: 500px;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: rgba(245, 102, 145, 0.212);
+}
+span a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+span a:hover {
+  color: white;
+  text-decoration: none;
+  transition: 0, 5s;
+}
+
+.divCopy {
+  text-align: center;
+}
+
+.divCopy input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(22, 22, 22, 0.616);
+}
+.btnCopy {
+  font-size: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none !important;
+  border: none;
+}
+
+.divCopy {
+  position: relative;
+  display: inline-block;
+}
+
+.divCopy .tooltip {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.divCopy .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.divCopy:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
