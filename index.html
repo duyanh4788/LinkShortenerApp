@@ -16,20 +16,21 @@
 
     <div class="demoShorttent">
         <div class="wrapShort">
-            <h6>GET URL SHOTERNT</h6>
-            <input type="url" id="txtUrl" class="inputShort" placeholder="nhập url">
-            <div class="divBtn">
-                <button class="btnShort" id="shortenUrl">Get Url</button><br>
-            </div>
-            <div class="divUrl">
-                <span>URL : <label id="showShortA"></label></span>
-            </div>
-            <div class="divCopy" id="divCopy">
-                <span id="showShortInput"></span>
-                <span class="tooltip" id="tooltip"></span>
-                <button class="btnCopy" onclick="copyUrl()" onmouseout="outCopy()">Copy Url</button>
-            </div>
-
+            <form>
+                <h6>GET URL SHOTERNT</h6>
+                <input type="url" id="txtUrl" class="inputShort" placeholder="nhập url">
+                <div class="divBtn">
+                    <button type="submit" class="btnShort" onclick="shortenUrl(event)">Get Url</button><br>
+                </div>
+                <div class="divUrl">
+                    <span>URL : <label id="showShortA"></label></span>
+                </div>
+                <div class="divCopy" id="divCopy">
+                    <span id="showShortInput"></span>
+                    <span class="tooltip" id="tooltip">Click Get Url : </span>
+                    <button type="button" class="btnCopy" onclick="copyUrl()" onmouseout="outCopy()">Copy Url</button>
+                </div>
+            </form>
         </div>
     </div>
 

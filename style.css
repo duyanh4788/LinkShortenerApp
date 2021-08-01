@@ -29,7 +29,7 @@ h6 {
   outline: none;
   border-radius: 5px;
   padding: 10px;
-  border: 1px solid rgba(22, 22, 22, 0.616);
+  border: 1px solid rgba(211, 204, 204, 0.616);
 }
 .inputShort::placeholder {
   color: #212321a9;
@@ -44,7 +44,7 @@ h6 {
   font-size: 15px;
   border-radius: 5px;
   color: white;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(211, 204, 204, 0.616);
   padding: 10px 15px;
   outline: none !important;
   border: none;
@@ -81,13 +81,13 @@ span a:hover {
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid rgba(22, 22, 22, 0.616);
+  border: 1px solid rgba(211, 204, 204, 0.616);
 }
 .btnCopy {
   font-size: 10px;
   border-radius: 5px;
   color: white;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(211, 204, 204, 0.616);
   outline: none !important;
   border: none;
 }
