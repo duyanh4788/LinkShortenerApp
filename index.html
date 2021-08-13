@@ -7,9 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,19 +16,20 @@
 
     <div class="demoShorttent">
         <div class="wrapShort">
-            <h6>GET URL SHOTERNT</h6>
+            <h6>GET URL SHORTING</h6>
             <form>
                 <input type="url" id="txtUrl" class="inputShort" placeholder="nhập url">
+                <span id="messageUrl" class="messageUrl"></span>
                 <div class="divBtn">
                     <button type="submit" class="btnShort" onclick="shortenUrl(event)">Get Url</button><br>
                 </div>
                 <div class="divUrl">
-                    <span>URL : <label id="showShortA"></label></span>
+                    <span>Go : <label id="showShortA"></label></span>
                 </div>
                 <div class="divCopy" id="divCopy">
                     <span id="showShortInput"></span>
-                    <span class="tooltip" id="tooltip">Click Get Url : </span>
-                    <button type="button" class="btnCopy" onclick="copyUrl()" onmouseout="outCopy()">Copy Url</button>
+                    <span class="tooltip" id="tooltip">Click Copy Url</span>
+                    <button type="button" class="btnCoppy" onclick="copyUrl()" onmouseout="outCopy()">Copy Url</button>
                 </div>
             </form>
         </div>

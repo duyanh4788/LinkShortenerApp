@@ -36,9 +36,20 @@ const bitLyApi = (longUrl) => {
     })
       .then(response => response.json())
       .then(data => {
-        document.getElementById("showShortA").innerHTML = `<a href=${data.link} target="_blank">` + data.link + "<a>";
-        document.getElementById("showShortInput").innerHTML = `<input id="copyInput" type="text" value=${data.link}>`;
-        document.getElementById("divCopy").style.display = "block"
+        console.log(data.link);
+        if (!data.link) {
+          document.getElementById("messageUrl").innerHTML = "(*) URL Không Đúng Định Dạng !";
+          document.getElementById("messageUrl").style.display = "block";
+          document.getElementById("showShortA").style.display = "none"
+          document.getElementById("divCopy").style.display = "none"
+        } else {
+          document.getElementById("showShortA").innerHTML = `<a href=${data.link} target="_blank">` + data.link + "<a>";
+          document.getElementById("showShortInput").innerHTML = `<input id="copyInput" type="text" value=${data.link}>`;
+          document.getElementById("showShortA").style.display = "inline-block"
+          document.getElementById("divCopy").style.display = "block"
+          document.getElementById("messageUrl").style.display = "none"
+        }
+
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -57,5 +68,5 @@ const copyUrl = () => {
 
 const outCopy = () => {
   let tooltip = document.getElementById("tooltip")
-  tooltip.innerHTML = "Click Get Url : "
+  tooltip.innerHTML = "Click Copy Url"
 }

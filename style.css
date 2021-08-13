@@ -25,20 +25,22 @@
 h6 {
   text-align: center;
   font-size: 15px;
-  color: #212321a9;
-  font-weight: bolder;
+  color: #fc5167;
 }
 .inputShort {
   width: 100%;
+  font-size: 14px;
   border: none;
   outline: none;
   border-radius: 5px;
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  background-color: rgba(245, 102, 145, 0.212);
+  color: #b400fc;
 }
 .inputShort::placeholder {
-  color: #212321a9;
+  color: #b400fc;
   opacity: 0.5;
   text-align: right;
 }
@@ -47,39 +49,47 @@ h6 {
   margin: 10px 0;
 }
 .btnShort {
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 5px;
-  color: white;
-  background-color: rgba(211, 204, 204, 0.616);
+  color: #fc5167;
+  background-color: rgba(245, 102, 145, 0.212);
+  box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
   padding: 10px 15px;
   outline: none !important;
   border: none;
   font-weight: bolder;
 }
 
+.messageUrl {
+  color: fc5167;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 .divUrl {
-  width: 500px;
-  max-width: 500px;
   padding: 10px;
   font-size: 15px;
   border-radius: 5px;
   background-color: rgba(245, 102, 145, 0.212);
   box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  color: #b400fc;
 }
 span a {
   text-decoration: none;
-  color: black;
+  color: #b400fc;
   font-weight: bolder;
 }
 
 span a:hover {
-  color: white;
+  color: #b400fcad;
   text-decoration: none;
   transition: 0, 5s;
 }
 
 .divCopy {
   text-align: center;
+  position: relative;
 }
 
 .divCopy input {
@@ -89,17 +99,9 @@ span a:hover {
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: rgba(245, 102, 145, 0.212);
+  color: #b400fc;
   box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
-}
-.btnCopy {
-  font-size: 10px;
-  border-radius: 5px;
-  color: white;
-  background-color: rgba(211, 204, 204, 0.616);
-  box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
-  outline: none !important;
-  border: none;
 }
 
 .divCopy {
@@ -107,23 +109,24 @@ span a:hover {
   display: inline-block;
 }
 
-.divCopy .tooltip {
+.tooltip {
   visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
+  width: 110px;
+  background-color: rgba(245, 102, 145, 0.212);
+  color: #fc5167;
   text-align: center;
   border-radius: 6px;
   padding: 5px;
   position: absolute;
   z-index: 1;
-  top: 40%;
-  left: 50%;
+  bottom: 90%;
+  right: -4%;
   margin-left: -75px;
   opacity: 1;
   transition: opacity 0.3s;
 }
-.divCopy .tooltip::after {
+
+.tooltip::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -131,10 +134,22 @@ span a:hover {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: rgba(245, 102, 145, 0.212) transparent transparent transparent;
   box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
 }
 .divCopy:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+.btnCoppy {
+  font-size: 13px;
+  border-radius: 5px;
+  color: #fc5167;
+  background-color: rgba(245, 102, 145, 0.212);
+  border: none;
+  outline: none !important;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 32%;
+  right: 0%;
 }
